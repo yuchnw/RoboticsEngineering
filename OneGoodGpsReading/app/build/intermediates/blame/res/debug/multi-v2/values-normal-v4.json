@@ -1,0 +1,28 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\Users\\wangy12\\AndroidStudioProjects\\OneGoodGpsReading\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-normal-v4\\values-normal-v4.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\wangy12\\AndroidStudioProjects\\OneGoodGpsReading\\app\\src\\main\\res\\values-normal\\styles.xml",
+                    "from": {
+                        "startLines": "1,2,9,20,13,3",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "16,85,452,981,635,143",
+                        "endLines": "1,2,12,23,19,8",
+                        "endColumns": "68,57,12,12,12,12",
+                        "endOffsets": "80,138,630,1149,976,447"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,8,12,19",
+                        "startColumns": "4,4,4,4,4,4",
+                        "startOffsets": "55,117,168,351,524,870",
+                        "endLines": "2,3,7,11,18,24",
+                        "endColumns": "61,50,12,12,12,12",
+                        "endOffsets": "112,163,346,519,865,1174"
+                    }
+                }
+            ]
+        }
+    ]
+}

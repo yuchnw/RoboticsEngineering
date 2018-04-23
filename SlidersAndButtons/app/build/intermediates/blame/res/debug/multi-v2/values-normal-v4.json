@@ -1,0 +1,28 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\Users\\wangy12\\AndroidStudioProjects\\SlidersAndButtons\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-normal-v4\\values-normal-v4.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\wangy12\\AndroidStudioProjects\\SlidersAndButtons\\app\\src\\main\\res\\values-normal\\styles.xml",
+                    "from": {
+                        "startLines": "1,2,32,15,4,11,23,40",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "16,85,1510,603,144,502,1038,1915",
+                        "endLines": "1,2,39,22,10,13,31,47",
+                        "endColumns": "68,57,12,12,12,12,12,12",
+                        "endOffsets": "80,138,1910,1033,497,597,1505,2320"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,12,20,27,30,39",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,117,168,573,1008,1366,1466,1938",
+                        "endLines": "2,3,11,19,26,29,38,46",
+                        "endColumns": "61,50,12,12,12,12,12,12",
+                        "endOffsets": "112,163,568,1003,1361,1461,1933,2343"
+                    }
+                }
+            ]
+        }
+    ]
+}

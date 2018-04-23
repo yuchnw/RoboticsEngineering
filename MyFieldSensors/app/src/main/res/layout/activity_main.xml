@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.rosehulman.myfieldsensors.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/x"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="X: " />
+
+        <TextView
+            android:id="@+id/gps_x_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="---" />
+
+        <TextView
+            android:id="@+id/gps_counter_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textAlignment="viewEnd"
+            android:layout_gravity="end"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/y"
+        android:layout_below="@id/x"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Y: " />
+
+        <TextView
+            android:id="@+id/gps_y_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="---" />
+
+        <TextView
+            android:id="@+id/gps_accuracy_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="---"
+            android:textAlignment="viewEnd"
+            android:layout_gravity="end"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/heading"
+        android:layout_below="@id/y"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Heading: " />
+
+        <TextView
+            android:id="@+id/gps_heading_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="---" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttons"
+        android:layout_below="@id/heading"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="16dp"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SET ORIGIN"
+            android:textSize="12dp"
+            android:onClick="handleSetOrigin"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SET X AXIS"
+            android:textSize="12dp"
+            android:onClick="handleSetXAxis"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/orientation_label"
+        android:layout_below="@id/buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Field Orientation Sensor"
+        android:layout_marginLeft="16dp"
+        android:textSize="10dp"/>
+
+    <LinearLayout
+        android:id="@+id/sensor_heading"
+        android:layout_below="@id/orientation_label"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Heading: " />
+
+        <TextView
+            android:id="@+id/sensor_heading_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="---" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ori_buttons"
+        android:layout_below="@id/sensor_heading"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="16dp"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SET HEADING TO 0"
+            android:textSize="12dp"
+            android:onClick="handleSetHeadingTo0"/>
+
+        <ToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOn="Reset Using GPS Heading"
+            android:textOff="Don't Reset to GPS Heaidng"
+            android:textSize="12dp"
+            android:onClick="handleToggle"/>
+    </LinearLayout>
+
+</RelativeLayout>

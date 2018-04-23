@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Score Keeper</string>
+    <string name="message_colorScore">%1$d color points</string>
+    <string name="message_nearBall">%1$d</string>
+    <string name="message_farBall">%1$d</string>
+    <string name="message_robotHome">%1$d</string>
+    <string name="message_wbScore">%1$d wb points</string>
+    <string name="message_totalScore">%1$d points</string>
+</resources>
